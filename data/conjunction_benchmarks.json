@@ -1,0 +1,110 @@
+[
+  {
+    "id": "BENCH-01",
+    "name": "ISS (ZARYA) vs. Cosmos 2251 Debris",
+    "regime": "Regime 1: VLEO / High Drag (~380-450 km)",
+    "primary": {
+      "name": "ISS (ZARYA)",
+      "norad_id": 25544,
+      "radius_m": 54.0,
+      "maneuverable": true,
+      "line1": "1 25544U 98067A   26325.26876256  .00011119  00000+0  20575-3 0  9994",
+      "line2": "2 25544  51.6319 242.7442 0007380  49.5860 310.5772 15.49528864596100"
+    },
+    "secondary": {
+      "name": "COSMOS 2251 DEB (34085)",
+      "norad_id": 34085,
+      "radius_m": 0.35,
+      "maneuverable": false,
+      "line1": "1 34085U 93036ARF 26325.26876256  .00008542  00000+0  16234-3 0  9991",
+      "line2": "2 34085  51.6369 242.7442 0007380  49.5860 310.5831 15.49528864000018"
+    },
+    "space_weather": {"f107": 195.0, "kp": 4.5},
+    "expected_miss_km": 0.685,
+    "delta_t_hours": 24.0,
+    "naive_status": "HIGH ALERT (< 1 km screening threshold)",
+    "expected_triage": "MONITOR",
+    "narrative": "At VLEO (~415 km), solar activity inflates along-track uncertainty to ~1.1 km. Rather than wasting precious station propellant on a false alarm, calibrated Pc places it in MONITOR triage with tracking priority."
+  },
+  {
+    "id": "BENCH-02",
+    "name": "Crowded Constellation Shell: SmallSat vs. Fengyun-1C Debris",
+    "regime": "Regime 2: Constellation Shell Debris (~500-600 km)",
+    "primary": {
+      "name": "FLOCK 4P-12",
+      "norad_id": 44713,
+      "radius_m": 0.5,
+      "maneuverable": false,
+      "line1": "1 44713U 19071J   26325.18432104  .00003421  00000+0  78231-4 0  9997",
+      "line2": "2 44713  97.4812 184.2154 0012410 120.4512 240.1124 15.15243102381204"
+    },
+    "secondary": {
+      "name": "FENGYUN 1C DEB (31215)",
+      "norad_id": 31215,
+      "radius_m": 0.25,
+      "maneuverable": false,
+      "line1": "1 31215U 99025BFQ 26325.18432104  .00004125  00000+0  92143-4 0  9993",
+      "line2": "2 31215  97.4862 184.2154 0012410 120.4512 240.1142 15.15243102000018"
+    },
+    "space_weather": {"f107": 180.0, "kp": 3.0},
+    "expected_miss_km": 0.217,
+    "delta_t_hours": 12.0,
+    "naive_status": "CRITICAL ALERT (< 300 m threshold)",
+    "expected_triage": "ACT",
+    "narrative": "Tight encounter geometry with confirmed small cross-track and along-track bounds generates elevated Pc. Requires immediate operational review and collision avoidance maneuver."
+  },
+  {
+    "id": "BENCH-03",
+    "name": "Mid-LEO Benign Pass: NOAA-18 vs. Iridium 33 Debris",
+    "regime": "Regime 3: Mid-LEO Sun-Sync & Weather (~650-850 km)",
+    "primary": {
+      "name": "NOAA 18",
+      "norad_id": 28654,
+      "radius_m": 2.5,
+      "maneuverable": false,
+      "line1": "1 28654U 05018A   26325.19543201  .00000095  00000+0  45123-4 0  9998",
+      "line2": "2 28654  98.7124 210.4512 0014210  65.1245 295.1245 14.12541203984125"
+    },
+    "secondary": {
+      "name": "IRIDIUM 33 DEB (35212)",
+      "norad_id": 35212,
+      "radius_m": 0.35,
+      "maneuverable": false,
+      "line1": "1 35212U 97051ARJ 26325.19543201  .00000185  00000+0  62145-4 0  9992",
+      "line2": "2 35212  98.7174 210.4512 0014210  65.1245 295.1315 14.12541203000018"
+    },
+    "space_weather": {"f107": 160.0, "kp": 2.0},
+    "expected_miss_km": 0.884,
+    "delta_t_hours": 48.0,
+    "naive_status": "FALSE ALARM (< 1 km threshold)",
+    "expected_triage": "IGNORE",
+    "narrative": "At 850 km altitude, atmospheric drag error is negligible. Calibrated covariance proves the miss distance of 884 m is over 5 sigma away from collision. Downscaled safely to IGNORE, eliminating alert fatigue."
+  },
+  {
+    "id": "BENCH-04",
+    "name": "Dilution Hazard: SL-16 Spent Rocket Body vs. Spire LEMUR",
+    "regime": "Regime 4: Decaying & Spent Rocket Bodies",
+    "primary": {
+      "name": "SL-16 R/B (22803)",
+      "norad_id": 22803,
+      "radius_m": 5.5,
+      "maneuverable": false,
+      "line1": "1 22803U 93061B   26325.15041203  .00021450  00000+0  38921-3 0  9991",
+      "line2": "2 22803  71.0125  95.4120 0054120  45.1205 315.4120 15.65412038741250"
+    },
+    "secondary": {
+      "name": "LEMUR-2-PETERP",
+      "norad_id": 43745,
+      "radius_m": 0.4,
+      "maneuverable": false,
+      "line1": "1 43745U 18096AC  26325.15041203  .00008451  00000+0  17542-3 0  9995",
+      "line2": "2 43745  71.0175  95.4120 0054120  45.1205 315.4150 15.65412038000018"
+    },
+    "space_weather": {"f107": 215.0, "kp": 6.2},
+    "expected_miss_km": 0.305,
+    "delta_t_hours": 72.0,
+    "naive_status": "DILUTION TRAP (Naive Pc drops to 1e-7 due to huge uncertainty)",
+    "expected_triage": "MONITOR",
+    "narrative": "Huge along-track error (sigma_T > 7 km) artificially dilutes raw Pc. A naive system would ignore it, but ECHELON detects the Dilution Paradox, calculates Pc_max, and elevates status to MONITOR."
+  }
+]

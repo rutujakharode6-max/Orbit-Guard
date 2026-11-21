@@ -1,0 +1,119 @@
+{
+  "train_samples": 2600,
+  "test_samples": 650,
+  "features": [
+    "delta_t_hours",
+    "altitude_km",
+    "perigee_altitude_km",
+    "eccentricity",
+    "inclination_deg",
+    "bstar",
+    "f107",
+    "kp",
+    "is_maneuvering"
+  ],
+  "axes": {
+    "radial": {
+      "median": {
+        "nominal_target_pct": 50.0,
+        "empirical_coverage_pct": 52.0,
+        "mae_km": 0.0235,
+        "rmse_km": 0.0312,
+        "mean_pred_km": 0.035
+      },
+      "1_sigma": {
+        "nominal_target_pct": 84.13,
+        "empirical_coverage_pct": 81.54,
+        "mae_km": 0.0348,
+        "rmse_km": 0.0419,
+        "mean_pred_km": 0.0642
+      },
+      "2_sigma": {
+        "nominal_target_pct": 95.45,
+        "empirical_coverage_pct": 92.15,
+        "mae_km": 0.0501,
+        "rmse_km": 0.0576,
+        "mean_pred_km": 0.085
+      },
+      "3_sigma": {
+        "nominal_target_pct": 99.73,
+        "empirical_coverage_pct": 98.46,
+        "mae_km": 0.0799,
+        "rmse_km": 0.0872,
+        "mean_pred_km": 0.1175
+      },
+      "naive_baseline": {
+        "fixed_sigma_km": 0.0601,
+        "empirical_coverage_pct": 79.85
+      }
+    },
+    "intrack": {
+      "median": {
+        "nominal_target_pct": 50.0,
+        "empirical_coverage_pct": 48.62,
+        "mae_km": 0.6479,
+        "rmse_km": 1.3621,
+        "mean_pred_km": 0.9084
+      },
+      "1_sigma": {
+        "nominal_target_pct": 84.13,
+        "empirical_coverage_pct": 79.54,
+        "mae_km": 0.9975,
+        "rmse_km": 1.8784,
+        "mean_pred_km": 1.8573
+      },
+      "2_sigma": {
+        "nominal_target_pct": 95.45,
+        "empirical_coverage_pct": 93.54,
+        "mae_km": 1.5466,
+        "rmse_km": 2.9171,
+        "mean_pred_km": 2.5751
+      },
+      "3_sigma": {
+        "nominal_target_pct": 99.73,
+        "empirical_coverage_pct": 99.08,
+        "mae_km": 3.9058,
+        "rmse_km": 5.3787,
+        "mean_pred_km": 4.9537
+      },
+      "naive_baseline": {
+        "fixed_sigma_km": 1.6988,
+        "empirical_coverage_pct": 80.46
+      }
+    },
+    "crosstrack": {
+      "median": {
+        "nominal_target_pct": 50.0,
+        "empirical_coverage_pct": 51.23,
+        "mae_km": 0.0545,
+        "rmse_km": 0.0769,
+        "mean_pred_km": 0.0783
+      },
+      "1_sigma": {
+        "nominal_target_pct": 84.13,
+        "empirical_coverage_pct": 79.69,
+        "mae_km": 0.0784,
+        "rmse_km": 0.0992,
+        "mean_pred_km": 0.1471
+      },
+      "2_sigma": {
+        "nominal_target_pct": 95.45,
+        "empirical_coverage_pct": 91.54,
+        "mae_km": 0.1158,
+        "rmse_km": 0.1388,
+        "mean_pred_km": 0.1973
+      },
+      "3_sigma": {
+        "nominal_target_pct": 99.73,
+        "empirical_coverage_pct": 98.0,
+        "mae_km": 0.1861,
+        "rmse_km": 0.2067,
+        "mean_pred_km": 0.2741
+      },
+      "naive_baseline": {
+        "fixed_sigma_km": 0.1391,
+        "empirical_coverage_pct": 79.85
+      }
+    }
+  }
+}

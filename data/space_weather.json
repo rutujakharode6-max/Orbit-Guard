@@ -1,0 +1,16 @@
+{
+  "description": "NOAA Space Weather Prediction Center (SWPC) daily indices archive & proxy index model",
+  "historical_samples": [
+    {"date": "2026-11-01", "f107": 178.5, "kp": 2.3, "ap": 9, "solar_activity": "Moderate"},
+    {"date": "2026-11-05", "f107": 194.2, "kp": 4.7, "ap": 38, "solar_activity": "Active / Minor Storm"},
+    {"date": "2026-11-10", "f107": 210.8, "kp": 6.3, "ap": 80, "solar_activity": "Major Storm (High Drag)"},
+    {"date": "2026-11-15", "f107": 165.0, "kp": 1.7, "ap": 5, "solar_activity": "Quiet"},
+    {"date": "2026-11-20", "f107": 182.4, "kp": 3.0, "ap": 15, "solar_activity": "Moderate"},
+    {"date": "2026-11-21", "f107": 188.6, "kp": 3.7, "ap": 22, "solar_activity": "Moderate"}
+  ],
+  "regime_profiles": {
+    "solar_max_active_storm": {"f107": 220.0, "kp": 6.0, "ap": 80, "drag_multiplier": 2.45},
+    "solar_max_moderate": {"f107": 180.0, "kp": 3.0, "ap": 15, "drag_multiplier": 1.40},
+    "solar_min_quiet": {"f107": 75.0, "kp": 1.0, "ap": 4, "drag_multiplier": 0.65}
+  }
+}
